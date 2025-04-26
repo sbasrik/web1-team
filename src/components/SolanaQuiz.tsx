@@ -11,7 +11,7 @@ const SolanaQuiz = () => {
 
   return (
     <div className="p-6">
-      <div className="h-[600px] overflow-y-auto border rounded-xl shadow-md p-6 text-left font-sans space-y-10">
+      <div className="h-[600px] overflow-y-auto border rounded-xl border-gray-400 shadow-md p-6 text-left font-sans space-y-10">
         {solanaQuestions.map((q, index) => (
           <div key={index}>
             <h2 className="text-xl font-semibold mb-4">{index + 1}. {q.question}</h2>

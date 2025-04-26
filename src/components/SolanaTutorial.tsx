@@ -1,5 +1,4 @@
 // SolanaTutorial.tsx
-import React from 'react';
 
 const solanaTutorial: string = `
 # Solana Blockchain Eğitimi
@@ -52,7 +51,7 @@ Solana, blockchain dünyasında hız ve verimliliği ile öne çıkan bir projed
 const SolanaTutorial = () => {
   return (
     <div className="p-6">
-      <div className="h-[600px] overflow-y-auto border rounded-xl shadow-md p-6 text-left font-sans">
+      <div className="h-[600px] overflow-y-auto border rounded-xl border-gray-400 shadow-md p-6 text-left font-sans">
         <div className="prose prose-lg max-w-none">
           {solanaTutorial.split('\n').map((line, index) => {
             if (line.startsWith('# ')) {
