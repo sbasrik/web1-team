@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='w-full flex flex-column'>
       <Navbar></Navbar>
-      <div className='w-full flex flex-row fixed left-0 top-20 w-full'>
+      <div className='flex flex-row fixed left-0 top-20 w-full'>
         <Tutorial/>
         <Test/>
       </div>
