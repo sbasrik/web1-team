@@ -7,15 +7,9 @@ import Tutorial from './components/Tutorial'
 function App() {
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
+    <div className='w-full flex flex-column'>
       <Navbar></Navbar>
-      <div className='w-full' style={{
-        display: 'flex',
-        flexDirection: 'row'
-      }}>
+      <div className='w-full flex flex-row fixed left-0 top-20 w-full'>
         <Tutorial/>
         <Test/>
       </div>

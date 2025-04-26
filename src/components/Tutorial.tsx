@@ -1,15 +1,12 @@
+import SolanaTutorial from "./SolanaTutorial"
+
 export default function Tutorial() {
     return (
-        <div style={{
-            justifyContent: 'flex-start',
-            borderColor: 'gray',
-            borderRadius: '1px',
-            color: 'white',
-        }}
-            className="border border-white min-h-screen w-1/2 ml-0"
-            
-        >
-            <h1 className=" mt-10">Tutorial✨</h1>
+        <div className="border border-black w-1/2">
+            <div>
+                <h1 className="text-black-400 mt-10">Tutorial✨</h1>
+                <SolanaTutorial></SolanaTutorial>
+            </div>
         </div>
     )
 }
