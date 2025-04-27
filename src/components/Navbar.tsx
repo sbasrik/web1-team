@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PiFlowerLotusDuotone } from "react-icons/pi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +15,8 @@ export default function Navbar() {
     return (
       <nav className="fixed top-0 left-0 w-full flex items-center justify-between p-1 bg-white shadow-md z-50">
         {/* Logo */}
-        <div className="flex justify-center text-2xl font-bold text-blue-600">
-          MyLogo
+        <div className="flex justify-center text-4xl font-bold text-blue-600 ml-4">
+        <PiFlowerLotusDuotone />
           <ul className="flex space-x-6 text-gray-700 ml-7">
           <li className="hover:text-blue-500 cursor-pointer font-normal text-lg">Home</li>
           <li className="hover:text-blue-500 cursor-pointer font-normal text-lg">About</li>
