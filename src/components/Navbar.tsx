@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { PiPenNibDuotone } from "react-icons/pi";
 
-export default function Navbar() {
+type NavbarProps = {
+  handleLogintwo: () => void;
+  isLoggedIn: boolean;
+};
+
+export default function Navbar({ handleLogintwo, isLoggedIn }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [username, setUsername] = useState(""); // Kullanıcı adını tutacak
   const [inputUsername, setInputUsername] = useState(""); // Input içindeki geçici kullanıcı adı
@@ -29,7 +34,7 @@ export default function Navbar() {
           if (!username) setIsOpen(true);
         }}
          className="text-black ">
-          {username ? username : "Sing In"}
+          {username ? username : "Sign In"}
         </button>
 
         {/* Modal */}
@@ -59,6 +64,7 @@ export default function Navbar() {
                 required
               />
               <button
+                onClick={handleLogintwo} 
                 type="submit"
                 className="bg-green-500 text-black p-3 rounded-lg hover:bg-green-600"
               >
