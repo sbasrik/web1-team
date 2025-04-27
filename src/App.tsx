@@ -52,7 +52,7 @@ function App() {
       const data = await response.json();
       console.log('Success:', data);
       setSuccess(true);
-      return data.link;
+      return data.data.link;
     } catch (error) {
       console.error('Error:', error);
       setError(error instanceof Error ? error.message : 'Bir hata oluştu');
