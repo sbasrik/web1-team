@@ -6,7 +6,7 @@ type NavbarProps = {
   isLoggedIn: boolean;
 };
 
-export default function Navbar({ handleLogintwo, isLoggedIn }: NavbarProps) {
+export default function Navbar({ handleLogintwo }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [username, setUsername] = useState(""); // Kullanıcı adını tutacak
   const [inputUsername, setInputUsername] = useState(""); // Input içindeki geçici kullanıcı adı
