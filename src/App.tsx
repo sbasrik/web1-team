@@ -21,16 +21,8 @@ function App() {
       </div>
       <div className="flex justify-end">
         <button className="bg-green-600 text-black px-6 py-3 rounded-lg hover:bg-green-700 transition">
-          Sertifika Al
+        Get Certificate
         </button>
-      </div>
-      <div>
-        <div className='mt-200'>
-          <button onClick={async () => {
-            await createNFTCertificate();
-            setIsCertificateDialogOpen(true);
-          }}>Get Certificate</button>
-        </div>
       </div>
     </div>
   )
