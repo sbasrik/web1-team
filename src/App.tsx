@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className='w-full flex flex-col'>
-      <Navbar></Navbar>
+      <Navbar/>
       <div className='flex flex-row left-0 top-20 w-full'>
         <Tutorial/>
         <Test/>

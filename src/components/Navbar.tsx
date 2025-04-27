@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PiFlowerLotusDuotone } from "react-icons/pi";
+import { PiPenNibDuotone } from "react-icons/pi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +15,8 @@ export default function Navbar() {
     return (
       <nav className="fixed top-0 left-0 w-full flex items-center justify-between p-1 bg-white shadow-md z-50">
         {/* Logo */}
-        <div className="flex justify-center text-4xl font-bold text-blue-600 ml-4">
-        <PiFlowerLotusDuotone />
+        <div className="flex justify-center text-3xl font-bold text-blue-600 ml-4">
+        <PiPenNibDuotone />
           <ul className="flex space-x-6 text-gray-700 ml-7">
           <li className="hover:text-blue-500 cursor-pointer font-normal text-lg">Home</li>
           <li className="hover:text-blue-500 cursor-pointer font-normal text-lg">About</li>
@@ -34,15 +34,15 @@ export default function Navbar() {
 
         {/* Modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-8 w-96 relative">
+        <div className="fixed inset-0 bg-white bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-blue-100 rounded-lg shadow-xl p-8 w-96 relative">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl"
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl"
             >
               ×
             </button>
-            <h2 className="text-2xl font-bold mb-6 text-center">Giriş Yap</h2>
+            <h2 className="text-4xl font-bold mb-6 flex justify-center"><PiPenNibDuotone /></h2>
             <form className="flex flex-col gap-4" onSubmit={handleLogin}>
               <input
                 type="text"
