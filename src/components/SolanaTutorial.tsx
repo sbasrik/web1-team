@@ -55,7 +55,7 @@ const SolanaTutorial = () => {
         <div className="prose prose-lg max-w-none">
           {solanaTutorial.split('\n').map((line, index) => {
             if (line.startsWith('# ')) {
-              return <h1 key={index} className="text-3xl font-bold mb-4">{line.replace('# ', '')}</h1>;
+              return <h2 key={index} className="text-3xl font-bold mb-4">{line.replace('# ', '')}</h2>;
             } else if (line.startsWith('## ')) {
               return <h2 key={index} className="text-2xl font-semibold mb-3">{line.replace('## ', '')}</h2>;
             } else if (line.startsWith('- **')) {

@@ -2,9 +2,9 @@ import SolanaTutorial from "./SolanaTutorial"
 
 export default function Tutorial() {
     return (
-        <div className="w-1/2">
+        <div className="flex justify-end">
             <div>
-                <h1 className="text-black-400 mt-12">Tutorial✨</h1>
+                <p className="text-black-400 mt-10 text-4xl font-bold italic">Tutorial✨</p>
                 <SolanaTutorial></SolanaTutorial>
             </div>
         </div>

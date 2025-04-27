@@ -4,7 +4,7 @@ export default function Test() {
     return (
         <div className="w-1/2">
             <div>
-                <h1 className="text-black-400 mt-12">Test✨</h1>
+                <p className="text-black-400 mt-10 text-4xl font-bold italic">Test✨</p>
                 <SolanaQuiz/>
             </div>
         </div>
